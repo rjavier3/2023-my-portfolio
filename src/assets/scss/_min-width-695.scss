@@ -1,0 +1,113 @@
+@media only screen and (min-width:695px){
+    section{
+        padding: 7rem 5rem;
+    }
+    .hidden{
+        max-height: 100vh;
+    }
+    ///header
+    header{
+        nav{
+            ul{
+                background-color: transparent;
+                display: flex;
+                height: auto;
+                width: auto;
+                position:static;
+                li{
+                    width: auto;
+                    min-width: 0;
+                    a{
+                        padding: 1.5rem 2rem;
+                        transition: padding 300ms ease-in-out;
+                    }
+                    a:hover{
+                        padding: 1.2rem 2rem 1.8rem 2rem;
+                    }
+                }
+            }
+        }
+        .menu-icons-container{
+            display: none;
+        }
+    }
+    .header-transparent nav ul,
+    .header-colored nav ul{
+        background-color: transparent;
+    }
+    ////banner section
+    section.banner{
+        .contents{
+            margin-top: 1rem;
+            .button::after{
+                height: calc(90vh - (11rem + 16rem));
+            }
+        }
+    }
+    //////about section
+    section.about{
+        .contents{
+            display: flex;
+            gap: 5%;
+            width: 100%; 
+            flex-direction: row-reverse;
+            .about-descriptions{
+                width: 47.5%;
+                padding-top: 0;
+            }
+            .about-pictures{
+                width: 47.5%;
+                .img-container{
+                    height: 18rem;
+                    &:first-child,
+                    &:last-child{
+                        height: 24rem;
+                    }
+                }
+            }
+        }
+    }
+    /////works section
+    section.works{
+        .works-heading{
+            margin-top: -10rem;
+            margin-left: 50%;
+        }
+        .web-cards-container{
+            column-width: 200px;
+            .web-card{
+                a{
+                    .head{
+                        padding: 2rem;
+                    }
+                    .body{
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+        .web-cards-container:hover .web-card .body{
+            filter: brightness(50%);
+        }
+        .web-cards-container .web-card:hover .body{
+            filter: brightness(100%);
+        }
+    }
+    ////conctact
+    section.contact{
+        div{
+            form{
+                max-width: 55rem;
+            }
+        }
+    }
+    ////footer
+    footer > div{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        p{
+            padding: 0;
+        }
+    }
+}

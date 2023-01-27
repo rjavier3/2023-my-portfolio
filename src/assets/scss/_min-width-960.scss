@@ -1,0 +1,44 @@
+@media only screen and (min-width:960px){
+    section.banner > div,
+    section.contact > div{
+        max-width: 96rem;
+        margin: auto;
+    }
+    //////banner
+    section.banner{
+        .contents{
+            padding: 7rem 0;
+                h1{
+                    margin: 2rem 0;
+                }
+                p{
+                    margin: 2rem 0;
+                }
+                div{
+                    margin: 2rem 0;
+                }
+                .button::after{
+                    height: calc(90vh - (18rem + 21rem));
+                }
+        }
+    }
+    //////works
+    section.works{
+        .web-cards-container{
+            column-gap: 1.5rem;
+            .web-card{
+                margin-bottom:1.5rem;
+                a{
+                    .head{
+                        padding: 2rem 4rem;
+                    }
+                }
+            }
+        }
+    }
+    //////about section
+    section.about{
+        & > div{
+        }
+    }
+}
